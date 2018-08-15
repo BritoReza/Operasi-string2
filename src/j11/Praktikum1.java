@@ -1,5 +1,5 @@
 package j11;
-
+import java.util.Locale;
 public class Praktikum1 {
     public static void main(String[] args){
         
@@ -54,17 +54,6 @@ public class Praktikum1 {
         
         System.out.println("gabungkan isi variable x dan r : "+ x.concat(r));
         
-        System.out.println("Pada x terdapat huruf 'a' : " + x.contains("a"));
-        
-        System.out.println("Isi variable x besar semua : "+ x.toUpperCase());
-        System.out.println("Isi variable x kecil semua : "+ x.toLowerCase());
-        
-        String t = "    operasi string    ";
-        System.out.println("Isi variable t : \""+ t +"\"");
-        System.out.println("Isi variable t tanpa spasi : \""+ t.trim() +"\"");
-        
-        System.out.println("gabungkan isi variable x dan r : "+ x.concat(r));
-        
         System.out.println("Karakter mulai posisi 3 di variable x : "
                 + x.substring(3));
         
@@ -86,8 +75,11 @@ public class Praktikum1 {
         for(int i = 0; i < arrTr.length; i++)
             System.out.println(arrTr[i]);
         
+        double d = 1545454000;
+        System.out.println(String.format("Uang,saya %,.4f", d));
         
-        
+        System.out.println(String.format(Locale.forLanguageTag("in-ID"),
+                "Uang saya Rp %,.2f", d));
         
         
         
