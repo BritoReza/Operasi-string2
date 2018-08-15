@@ -30,6 +30,21 @@ public class Praktikum1 {
         System.out.println("Isi x sama dengan r (Not Case Senstive) : "
                 + x.equalsIgnoreCase(r));
         
+        System.out.println("Perbandingan isi x dengan y : " + x.compareTo(y));
+        System.out.println("Perbandingan isi x dengan z (Case Sensitive): "
+                + x.compareTo(z));
+        System.out.println("Perbandingan isi x dengan r (Case Sensitive) : "
+                + x.compareTo(r));
+        System.out.println("Perbandingan isi x dengan r (Not Case Sensitive) : "
+                + x.compareToIgnoreCase(r));
+        
+        String s = "operasI";
+        System.out.println("Isi variable s : "+ s);
+        System.out.println("Perbandingan isi r dengan s (Case Sensitive) : "
+                + r.compareTo(s));
+        
+        
+        
         
         
         
