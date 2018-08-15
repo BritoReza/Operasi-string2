@@ -1,5 +1,5 @@
 package j11;
-
+import java.util.Scanner;
 public class Praktikum02 {
     private static void tampilJudul(String identias){
         System.out.println("Identitas : "+ identias);
@@ -10,7 +10,18 @@ public class Praktikum02 {
         
         tampilJudul(identitas);
         
+        private static String tampilInput() {
+            Scanner scanner = new Scanner(System.in);
+            
+            System.out.println("Masukkan Kalimat: ");
+            String kalimat = scanner.nextLine();
+            System.out.println("Kalimat Asli : " + kalimat);
+            
+            return kalimat;
+        }
+            String kalimat = tampilInput();
+        
     }
     
-    }
+   }
 
