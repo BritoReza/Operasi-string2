@@ -21,6 +21,19 @@ public class Praktikum02 {
         }
             String kalimat = tampilInput();
         
+            private static String vokal2Angka(String kalimat) {
+                char [] [] arConvert =
+                {{'a','4'},{'i','1'},{'u','2'},{'e','3'},{'o','o'}};
+                
+                kalimat = kalimat.toLowerCase();
+                for(int i = 0; i < arConvert.length; i++)
+                    kalimat = kalimat.replace(arConvert[i][0], arConvert[i][1]);
+                
+                return kalimat;
+                
+                String convert = vocal2Angka(kalimat);
+                
+            }
     }
     
    }
